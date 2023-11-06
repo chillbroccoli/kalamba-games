@@ -25,7 +25,7 @@ export default function ArticlesList({ articles }: { articles: Article[] }) {
               </div>
               <FavoriteArticleButton slug={slug} favorited={favorited} favoritesCount={favoritesCount} compact />
             </div>
-            <Link to={Routing.getInterpolatedRoute([ClientRoutes.ARTICLE, { slug: slug }])} className="preview-link">
+            <Link to={Routing.getInterpolatedRoute([ClientRoutes.ARTICLE, { slug }])} className="preview-link">
               <h3>{title}</h3>
               <p>{description}</p>
               <span>Read more...</span>
